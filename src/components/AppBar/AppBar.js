@@ -6,6 +6,7 @@ import { default as MuiAppBar } from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import StepIcon from '@material-ui/core/StepIcon'
+import Switch from '@material-ui/core/Switch'
 
 import FarmhandContext from '../Farmhand/Farmhand.context'
 import { moneyString } from '../../utils'
@@ -67,6 +68,7 @@ const MoneyDisplay = ({ money }) => {
 
 export const AppBar = ({
   handleClickNotificationIndicator,
+  handleDarkModeChange,
   money,
   showNotifications,
   todaysNotifications,
@@ -124,6 +126,7 @@ export const AppBar = ({
           variant: 'h2',
         }}
       >
+        <Switch {...{ onChange: handleDarkModeChange }} />
         <MoneyDisplay {...{ money }} />
       </Typography>
     </Toolbar>
@@ -132,6 +135,7 @@ export const AppBar = ({
 
 AppBar.propTypes = {
   handleClickNotificationIndicator: func.isRequired,
+  handleDarkModeChange: func.isRequired,
   money: number.isRequired,
   showNotifications: bool.isRequired,
   todaysNotifications: array.isRequired,

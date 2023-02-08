@@ -379,6 +379,7 @@ export default class Farmhand extends Component {
       cowsTraded: 0,
       cropsHarvested: {},
       dayCount: 0,
+      enableDarkMode: false,
       farmName: 'Unnamed',
       field: createNewField(),
       hasBooted: false,
@@ -1325,6 +1326,7 @@ export default class Farmhand extends Component {
                       'has-booted': this.state.hasBooted,
                     }
                   ),
+                  theme: this.state.enableDarkMode ? 'dark' : 'default',
                 }}
               >
                 <AppBar />

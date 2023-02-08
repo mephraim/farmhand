@@ -432,6 +432,10 @@ export default {
     this.openDialogView(dialogView.FARMERS_LOG)
   },
 
+  handleDarkModeChange(_e, enableDarkMode) {
+    this.setState({ enableDarkMode })
+  },
+
   handleOnlineToggleChange(_e, goOnline) {
     if (!goOnline) {
       this.showNotification(DISCONNECTING_FROM_SERVER, 'info')
