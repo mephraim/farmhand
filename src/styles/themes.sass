@@ -1,51 +1,55 @@
 // Start with the default set of styles
 .farmhand-root
   // Card
-  --card-background: #ffe3a1
-  --card-border: #b68000
+  --theme-card-background: #ffe3a1
+  --theme-card-border: #b68000
 
   // NOTE(ephraim): I believe this should be the equivalent
   // of the existing SASS calculation:
   //   scale-color($card-background, $lightness: 40%)
   // But that still needs to be verified.
-  --card-selected-background: hsl(var(--card-background) 100% 40%)
+  --theme-card-selected-background: hsl(var(--theme-card-background) 100% 40%)
 
   // Typography
-  --text-color: inherit;
+  --theme-text-color: inherit
+
+  // Inputs
+  --theme-input-border-color: inherit
 
   // Navigation
-  --navigation-text-color: inherit
-  --navigation-input-border-bottom: 2px solid #3f51b5;
+  --theme-navigation-text-color: inherit
 
   // Sidebar
-  --sidebar-color-1: #acf5ff
-  --sidebar-color-2: #88efff
-  --sidebar-background: linear-gradient(45deg, var(--sidebar-color-2) 8.33%, var(--sidebar-color-1) 8.33%, var(--sidebar-color-1) 50%, var(--sidebar-color-2) 50%, var(--sidebar-color-2) 58.33%, var(--sidebar-color-1) 58.33%, var(--sidebar-color-1) 100%)
-  --sidebar-background-size: 6.00px 6.00px
+  --theme-sidebar-color-1: #acf5ff
+  --theme-sidebar-color-2: #88efff
+  --theme-sidebar-background: linear-gradient(45deg, var(--theme-sidebar-color-2) 8.33%, var(--theme-sidebar-color-1) 8.33%, var(--theme-sidebar-color-1) 50%, var(--theme-sidebar-color-2) 50%, var(--theme-sidebar-color-2) 58.33%, var(--theme-sidebar-color-1) 58.33%, var(--theme-sidebar-color-1) 100%)
+  --theme-sidebar-background-size: 6.00px 6.00px
 
   // Stage
-  --stage-home-background: url('../img/ui/brown-dot-bg.png');
-  --stage-home-background--october: url('../img/ui/jack-o-lantern-bg.png')
-  --stage-home-background--december: url('../img/ui/winter-bg.png')
-  --stage-grass-background: url('../img/ui/grass.png')
-  --stage-shop-background: url('../img/ui/yellow-dot-bg.png');
-  --stage-workshop-background: url('../img/ui/lavender-dot-bg.png')
+  --theme-stage-home-background: url('../img/ui/brown-dot-bg.png');
+  --theme-stage-home-background--october: url('../img/ui/jack-o-lantern-bg.png')
+  --theme-stage-home-background--december: url('../img/ui/winter-bg.png')
+  --theme-stage-grass-background: url('../img/ui/grass.png')
+  --theme-stage-shop-background: url('../img/ui/yellow-dot-bg.png');
+  --theme-stage-workshop-background: url('../img/ui/lavender-dot-bg.png')
 
 .farmhand-root[theme=dark]
   // Card
-  --card-background: #111
-  --card-border: #444
+  --theme-card-background: #111
+  --theme-card-border: #444
 
   // Typography
-  --text-color: #ddd;
+  --theme-text-color: #ddd
+
+  // Inputs
+  --theme-input-border-color: #ddd
 
   // Navigation
-  --navigation-text-color: #ddd
-  --navigation-input-border-bottom: 2px solid #3f51b5;
+  --theme-navigation-text-color: #ddd
 
   // Sidebar
-  --sidebar-color-1: #222
-  --sidebar-color-2: #333
+  --theme-sidebar-color-1: #222
+  --theme-sidebar-color-2: #333
 
   // Stage
-  --stage-home-background: #111
+  --theme-stage-home-background: #111

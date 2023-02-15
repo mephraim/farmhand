@@ -54,8 +54,14 @@ body
 
   &,
   .MuiTypography-root
-    color: var(--text-color);
     font-family: "Public Sans", sans-serif
+
+  .MuiFormLabel-root,
+  .MuiTypography-root
+    color: var(--theme-text-color)
+
+  .MuiOutlinedInput-notchedOutline
+    border-color: var(--theme-input-border-color)
 
   @media (min-width: #{$break-xs}) and (orientation: landscape)
     padding-top: 3em
@@ -102,8 +108,8 @@ body
     display: flex
 
   .sidebar
-    background: var(--sidebar-background);
-    background-size: var(--sidebar-background-size);
+    background: var(--theme-sidebar-background);
+    background-size: var(--theme-sidebar-background-size);
     box-sizing: border-box
     overflow: auto
     padding: 1em 1em 0

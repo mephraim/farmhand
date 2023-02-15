@@ -15,12 +15,12 @@ img
     width: 100%
 
 @mixin card-style
-  background: var(--card-background)
-  border: solid 2px var(--card-border)
+  background: var(--theme-card-background)
+  border: solid 2px var(--theme-card-border)
   transition: background $duration-entering-screen $easing-ease-out
 
   &.is-selected
-    background: var(--card-selected-background)
+    background: var(--theme-card-selected-background)
 
 @mixin center-tabs
   margin: 0 auto
